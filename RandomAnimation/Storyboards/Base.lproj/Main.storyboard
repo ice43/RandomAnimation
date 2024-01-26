@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdp-wm-65o">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdp-wm-65o" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="76.666666666666686" y="99" width="240" height="174"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="bVU-EG-QL2">
@@ -68,17 +68,28 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeUp"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="1.24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.81999999999999995"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTU-y4-CFr">
-                                <rect key="frame" x="76.666666666666671" y="711" width="239.66666666666657" height="43"/>
+                                <rect key="frame" x="76.666666666666671" y="711" width="239.66666666666663" height="43"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="gop-WI-dUI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Run Animation">
+                                <state key="normal" title="Run">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -87,7 +98,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="animateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82J-0O-2pw"/>
+                                    <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Bk-cA-SeC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,6 +112,14 @@
                             <constraint firstItem="hdp-wm-65o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nND-kf-nCk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="curveLabel" destination="Wj5-Hc-CUk" id="a0x-b3-yjZ"/>
+                        <outlet property="delayLabel" destination="bQX-gT-vEi" id="LE5-hn-GHh"/>
+                        <outlet property="durationLabel" destination="E2A-MU-IS3" id="L30-qt-Zb3"/>
+                        <outlet property="forceLabel" destination="soz-pS-T21" id="53I-Ed-V3C"/>
+                        <outlet property="presetLabel" destination="BVY-um-pTo" id="nYV-Dv-pf8"/>
+                        <outlet property="springView" destination="hdp-wm-65o" id="nqO-pF-Cpt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
