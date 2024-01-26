@@ -18,6 +18,8 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var durationLabel: UILabel!
     @IBOutlet private weak var delayLabel: UILabel!
 
+    private var firstEntry = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +30,6 @@ final class ViewController: UIViewController {
         delayLabel.text = "Delay: \(springView.delay)"
     }
     
-    private var firstEntry = true
 
     @IBAction private func animationButtonPressed(_ sender: UIButton) {
         if firstEntry {
