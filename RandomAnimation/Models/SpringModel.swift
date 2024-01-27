@@ -17,8 +17,8 @@ struct SpringModel {
     
     static func getModel() -> SpringModel {
         SpringModel(
-            animationPreset: AnimationPreset(rawValue: "squeezeUp") ?? .squeezeUp,
-            curvePreset: AnimationCurve(rawValue: "easeOut") ?? .easeOut,
+            animationPreset: .squeezeUp,
+            curvePreset: .easeOut,
             force: 1.24,
             duration: 0.82,
             delay: 0.3
