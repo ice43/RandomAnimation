@@ -18,7 +18,7 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var durationLabel: UILabel!
     @IBOutlet private weak var delayLabel: UILabel!
     
-    private let springModel = SpringModel.getModel()
+    private let springModel = SpringModel.getAnimation()
     private var firstEntry = true
     
     override func viewDidLoad() {

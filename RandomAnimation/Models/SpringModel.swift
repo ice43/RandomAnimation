@@ -15,7 +15,7 @@ struct SpringModel {
     let duration: CGFloat
     let delay: CGFloat
     
-    static func getModel() -> SpringModel {
+    static func getAnimation() -> SpringModel {
         SpringModel(
             animationPreset: .squeezeUp,
             curvePreset: .easeOut,
