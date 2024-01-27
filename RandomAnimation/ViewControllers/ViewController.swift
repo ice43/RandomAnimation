@@ -17,22 +17,29 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var forceLabel: UILabel!
     @IBOutlet private weak var durationLabel: UILabel!
     @IBOutlet private weak var delayLabel: UILabel!
-
+    
+    private let springModel = SpringModel.getModel()
     private var firstEntry = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presetLabel.text = "Preset: \(springView.animation)"
-        curveLabel.text = "Curve: \(springView.curve)"
-        forceLabel.text = "Force: \(springView.force)"
-        durationLabel.text = "Duration: \(springView.duration)"
-        delayLabel.text = "Delay: \(springView.delay)"
+        presetLabel.text = "Preset: \(springModel.animationPreset)"
+        curveLabel.text = "Curve: \(springModel.curvePreset)"
+        forceLabel.text = "Force: \(springModel.force)"
+        durationLabel.text = "Duration: \(springModel.duration)"
+        delayLabel.text = "Delay: \(springModel.delay)"
     }
     
 
     @IBAction private func animationButtonPressed(_ sender: UIButton) {
         if firstEntry {
+            springView.animation = springModel.animationPreset.rawValue
+            springView.curve = springModel.curvePreset.rawValue
+            springView.force = springModel.force
+            springView.duration = springModel.duration
+            springView.delay = springModel.delay
+            
             springView.animate()
             firstEntry.toggle()
             
