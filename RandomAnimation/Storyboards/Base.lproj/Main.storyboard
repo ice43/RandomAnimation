@@ -51,6 +51,9 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-Nx-5qg" customClass="SpringLabel" customModule="SpringAnimation">
                                 <rect key="frame" x="91" y="354" width="210" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="I48-9n-Cp1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -66,7 +69,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Rf0-Nx-5qg" secondAttribute="trailing" constant="76" id="af3-T4-u9S"/>
                             <constraint firstItem="VTU-y4-CFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76.666666666666657" id="m12-4M-haH"/>
                             <constraint firstItem="hdp-wm-65o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nND-kf-nCk"/>
-                            <constraint firstItem="Rf0-Nx-5qg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="rlM-AK-IrO"/>
+                            <constraint firstItem="Rf0-Nx-5qg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="rlM-AK-IrO"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Rf0-Nx-5qg" secondAttribute="bottom" constant="320" id="yge-PV-EP0"/>
                         </constraints>
                     </view>
