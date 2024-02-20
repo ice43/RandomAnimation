@@ -14,8 +14,8 @@
 		CD26FFB42B62553D0062745E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD26FFB32B62553D0062745E /* Assets.xcassets */; };
 		CD26FFB72B62553D0062745E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD26FFB52B62553D0062745E /* LaunchScreen.storyboard */; };
 		CD26FFC32B629B810062745E /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = CD26FFC22B629B810062745E /* SpringAnimation */; };
-		CD2773422B64F162003F251C /* SpringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2773412B64F162003F251C /* SpringModel.swift */; };
-		CD9D26552B63D0C50066BEB1 /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D26542B63D0C50066BEB1 /* Extension + String.swift */; };
+		CD2773422B64F162003F251C /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2773412B64F162003F251C /* Animation.swift */; };
+		CDFBB0612B84D0F6000AD3A1 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB0602B84D0F6000AD3A1 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		CD26FFB32B62553D0062745E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD26FFB62B62553D0062745E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD26FFB82B62553D0062745E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD2773412B64F162003F251C /* SpringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringModel.swift; sourceTree = "<group>"; };
-		CD9D26542B63D0C50066BEB1 /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		CD2773412B64F162003F251C /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		CDFBB0602B84D0F6000AD3A1 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				CD26FFC02B6255FB0062745E /* ViewControllers */,
-				CD26FFBF2B6255DB0062745E /* Storyboards */,
 				CD2773402B64F13E003F251C /* Models */,
+				CDFBB05F2B84D065000AD3A1 /* Services */,
+				CD26FFBF2B6255DB0062745E /* Storyboards */,
 				CD26FFBE2B6255C50062745E /* Supporting */,
 				CD26FFB32B62553D0062745E /* Assets.xcassets */,
 			);
@@ -94,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				CD26FFAE2B62553C0062745E /* ViewController.swift */,
-				CD9D26542B63D0C50066BEB1 /* Extension + String.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -102,9 +102,17 @@
 		CD2773402B64F13E003F251C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CD2773412B64F162003F251C /* SpringModel.swift */,
+				CD2773412B64F162003F251C /* Animation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CDFBB05F2B84D065000AD3A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDFBB0602B84D0F6000AD3A1 /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2773422B64F162003F251C /* SpringModel.swift in Sources */,
+				CD2773422B64F162003F251C /* Animation.swift in Sources */,
+				CDFBB0612B84D0F6000AD3A1 /* DataStore.swift in Sources */,
 				CD26FFAF2B62553C0062745E /* ViewController.swift in Sources */,
 				CD26FFAB2B62553C0062745E /* AppDelegate.swift in Sources */,
-				CD9D26552B63D0C50066BEB1 /* Extension + String.swift in Sources */,
 				CD26FFAD2B62553C0062745E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,51 +18,10 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdp-wm-65o" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="76.666666666666686" y="99" width="240" height="174"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="bVU-EG-QL2">
-                                        <rect key="frame" x="15" y="15" width="210" height="144"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preset:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVY-um-pTo">
-                                                <rect key="frame" x="0.0" y="0.0" width="53.333333333333336" height="21.666666666666668"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj5-Hc-CUk">
-                                                <rect key="frame" x="0.0" y="30.666666666666657" width="47.333333333333336" height="21.666666666666671"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soz-pS-T21">
-                                                <rect key="frame" x="0.0" y="61.33333333333335" width="44" height="21.333333333333336"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2A-MU-IS3">
-                                                <rect key="frame" x="0.0" y="91.666666666666657" width="68" height="21.666666666666671"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQX-gT-vEi">
-                                                <rect key="frame" x="0.0" y="122.33333333333336" width="45.333333333333336" height="21.666666666666671"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="bVU-EG-QL2" secondAttribute="trailing" constant="15" id="3Ag-jT-BXH"/>
-                                    <constraint firstAttribute="bottom" secondItem="bVU-EG-QL2" secondAttribute="bottom" constant="15" id="TAK-Db-ESB"/>
                                     <constraint firstAttribute="height" constant="174" id="ca2-H2-bhj"/>
                                     <constraint firstAttribute="width" constant="240" id="gxS-d5-Vip"/>
-                                    <constraint firstItem="bVU-EG-QL2" firstAttribute="top" secondItem="hdp-wm-65o" secondAttribute="top" constant="15" id="hMI-64-Xmp"/>
-                                    <constraint firstItem="bVU-EG-QL2" firstAttribute="leading" secondItem="hdp-wm-65o" secondAttribute="leading" constant="15" id="qUH-QE-4Bt"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -90,24 +49,30 @@
                                     <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Bk-cA-SeC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-Nx-5qg" customClass="SpringLabel" customModule="SpringAnimation">
+                                <rect key="frame" x="91" y="354" width="210" height="144"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VTU-y4-CFr" secondAttribute="bottom" constant="64" id="4y2-3u-OJM"/>
+                            <constraint firstItem="Rf0-Nx-5qg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="295" id="HpG-Jx-BcV"/>
                             <constraint firstItem="VTU-y4-CFr" firstAttribute="centerX" secondItem="hdp-wm-65o" secondAttribute="centerX" id="PGR-Fk-fxf"/>
                             <constraint firstItem="hdp-wm-65o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="SIV-PV-kuz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rf0-Nx-5qg" secondAttribute="trailing" constant="76" id="af3-T4-u9S"/>
                             <constraint firstItem="VTU-y4-CFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76.666666666666657" id="m12-4M-haH"/>
                             <constraint firstItem="hdp-wm-65o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nND-kf-nCk"/>
+                            <constraint firstItem="Rf0-Nx-5qg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="rlM-AK-IrO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Rf0-Nx-5qg" secondAttribute="bottom" constant="320" id="yge-PV-EP0"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveLabel" destination="Wj5-Hc-CUk" id="a0x-b3-yjZ"/>
-                        <outlet property="delayLabel" destination="bQX-gT-vEi" id="LE5-hn-GHh"/>
-                        <outlet property="durationLabel" destination="E2A-MU-IS3" id="L30-qt-Zb3"/>
-                        <outlet property="forceLabel" destination="soz-pS-T21" id="53I-Ed-V3C"/>
-                        <outlet property="presetLabel" destination="BVY-um-pTo" id="nYV-Dv-pf8"/>
-                        <outlet property="springView" destination="hdp-wm-65o" id="nqO-pF-Cpt"/>
+                        <outlet property="animationLabel" destination="Rf0-Nx-5qg" id="STj-Pk-Ppl"/>
+                        <outlet property="animationView" destination="hdp-wm-65o" id="nqO-pF-Cpt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
